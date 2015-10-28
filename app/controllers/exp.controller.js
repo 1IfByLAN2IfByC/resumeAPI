@@ -7,6 +7,7 @@ exports.create = function(req, res) {
     name: req.body.name,
     type: req.body.type,
     description: req.body.description,
+    user: req.decoded._id,
   });
   newExp.save(function(err) {
     if (err) {

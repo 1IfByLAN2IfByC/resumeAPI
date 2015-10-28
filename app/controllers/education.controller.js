@@ -8,6 +8,7 @@ exports.create = function(req, res) {
     major: req.body.major,
     start: req.body.start,
     end: req.body.end,
+    user: req.decoded._id,
   });
   newEducation.save(function(err) {
     if (err) {

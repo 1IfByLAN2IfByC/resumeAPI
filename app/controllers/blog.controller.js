@@ -6,6 +6,7 @@ exports.create = function(req, res) {
   var newBlog = new Blog({
     title: req.body.title,
     text: req.body.text,
+    author: req.decoded._id,
   });
   newBlog.save(function(err) {
     if (err) {

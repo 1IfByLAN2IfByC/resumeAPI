@@ -7,6 +7,7 @@ exports.create = function(req, res) {
     name: req.body.name,
     level: req.body.level,
     type: req.body.type,
+    user: req.decoded._id,
   });
   newSkill.save(function(err) {
     if (err) {
