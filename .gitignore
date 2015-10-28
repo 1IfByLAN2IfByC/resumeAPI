@@ -1,0 +1,18 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# DS Store
+.DS_Store
+
+# Configs 
+*.config.js
+
+# modules
+node_modules
